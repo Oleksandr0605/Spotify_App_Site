@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P';
+}
+
+.btn{
+  background-color: #43D88D;
+  left: 30%;
+  top: 90%;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.input{
+  background-color: #43D88D;
+  left: 30%;
+  top: 83%;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.txt{
+  position: absolute;
+  color: white;
+  left: 30%;
+  top: 78%;
+  font-size: 22px;
+}
+
+.back{
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.spt{
+  background-image: url(https://variety.com/wp-content/uploads/2022/07/Spotify-Earnings.jpg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+  
