@@ -57,7 +57,7 @@ def but():
             continue
     map = folium.Map(tiles="Stamen Toner",
                     location=[49.817545, 24.023932],
-                    zoom_start=10)
+                    zoom_start=5)
     for track in markets_track:
         try:
             map.add_child(folium.Marker(track[1],
