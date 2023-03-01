@@ -51,16 +51,18 @@ def but():
         #         fff.write(location)
         #     except:
         #         pass
-        # try:
-        markets_track.append((tracks["tracks"][0]["name"], (location.latitude, location.longitude)))
-        # except:
-        #     continue
+        try:
+            markets_track.append((tracks["tracks"][0]["name"], (location.latitude, location.longitude)))
+        except:
+            continue
     map = folium.Map(tiles="Stamen Toner",
-                    zoom_start=3)
+                    location=[49.817545, 24.023932],
+                    zoom_start=10)
     for track in markets_track:
         try:
             map.add_child(folium.Marker(track[1],
-                                        icon=folium.Icon(color="purple", popup=track[0])))
+                                        popup=track[0],
+                                        icon=folium.Icon(color="purple")))
         except:
             continue
     return map._repr_html_()
